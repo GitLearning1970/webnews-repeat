@@ -26,18 +26,24 @@
 
     <main role="main"> <!-- main content -->
         <div class="categories"> <!-- categories -->
-            <ul>
-                <li><button type="button">Technology</button></li>
-                <li><button type="button">Games</button></li>
-                <li><button type="button">Sports</button></li>
-                <li><button type="button">Cience</button></li>
-                <li><button type="button">Business</button></li>
-                <li><button type="button">Home & Life</button></li>
-                <li><button type="button">Motorsport</button></li>
-                <li><button type="button">Life Style</button></li>
-                <li><button type="button">Health</button></li>
-                <li><button type="button">Food</button></li>
-            </ul>
+            <ul class="categories-items"> <!-- categories buttons -->
+                <li><button type="button" class="wn-button">Technology</button></li>
+                <li><button type="button" class="wn-button">Games</button></li>
+                <li><button type="button" class="wn-button">Sports</button></li>
+                <li><button type="button" class="wn-button">Cience</button></li>
+                <li><button type="button" class="wn-button">Business</button></li>
+                <li><button type="button" class="wn-button">Home & Life</button></li>
+            </ul> <!-- categories buttons /end -->
+
+            <div class="dropdown"> <!-- dropdown -->
+                <button type="button" id="dropdownBtn" class="wn-button">...</button>
+                <ul id="dropdownCont"> <!-- dropdown items -->
+                    <li class="wn-f-item">Motorsport</li>
+                    <li>Life Style</li>
+                    <li>Health</li>
+                    <li class="wn-l-item">Food</li>
+                </ul> <!-- dropdown items /end -->
+            </div> <!-- dropdown /end -->
         </div> <!-- categories /end -->
     </main> <!-- main content /end -->
 </body>
