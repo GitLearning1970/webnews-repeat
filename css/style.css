@@ -93,10 +93,24 @@ header {
 
 /* login screen */
 #loginScreen {
+    position: relative;
     background: whitesmoke;
     width: 20vw;
     border-radius: 8px;
     margin: 150px auto 0 auto;
+    box-shadow: 0 6px 10px 8px rgba(0, 0, 0, 0.26);
+    animation-name: loginAnim;
+    animation-duration: .4s;
+}
+@keyframes loginAnim {
+    from {
+        top: -300px;
+        opacity: 0;
+    }
+    to {
+        top: 0;
+        opacity: 1;
+    }
 }
 
 /* login header */
