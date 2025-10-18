@@ -5,6 +5,7 @@
     --orangeHolver: #BD730D;
     --yellow: #E9DEB0;
     --green: #2F615E;
+    --greenHolver: #275754;
 }
 
 * {
@@ -77,6 +78,108 @@ header {
 }
 #loginBtn:hover {
     background: var(--orangeHolver);
+}
+
+/* ================= LOGIN SCREEN ================= */
+/* background */
+.background-modal {
+    position: fixed;
+    display: block;
+    z-index: 1;
+    width: 100%; height: 100%;
+    top: 0; left: 0;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+/* login screen */
+#loginScreen {
+    background: whitesmoke;
+    width: 20vw;
+    border-radius: 8px;
+    margin: 150px auto 0 auto;
+}
+
+/* login header */
+.login-header {
+    background: var(--brown);
+    color: whitesmoke;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.modal-header-title {
+    text-align: center;
+    padding: 8px 0;
+    font-size: 24pt;
+}
+
+/* close button */
+.close {
+    float: right;
+    font-size: 18pt;
+    background: rgba(182, 17, 17, 0.74);
+    padding: 0 6px;
+    margin: 6px 6px 0 0;
+    cursor: pointer;
+    border-radius: 4px;
+}
+.close:hover {
+    background: rgb(182, 17, 17);
+}
+
+/* login body */
+.login-body {
+    padding: 0 60px;
+    margin-top: 20px;
+}
+
+.usr-data {
+    margin-bottom: 20px;
+}
+
+.usr-data label {
+    font-weight: bold;
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.usr-data input {
+    display: block;
+    width: 100%;
+    font-size: 13pt;
+    padding: 3px 0;
+    text-indent: 6px;
+    border-radius: 4px;
+    border: 1px solid rgb(184, 184, 184);
+    font-style: italic;
+}
+.usr-data input:focus {
+    outline: none;
+    background: #f5edcc;
+}
+
+.login-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding-bottom: 15px;
+}
+
+/* create account */
+.login-links a {
+    color: rgb(34, 141, 241);
+}
+.login-links a:hover {
+    text-decoration: underline;
+}
+
+/* sign in */
+.login-links button {
+    background: var(--green);
+    font-size: 13pt;
+}
+.login-links button:hover {
+    background: var(--greenHolver);
 }
 
 /* ================= MAIN CONTENT ================= */
