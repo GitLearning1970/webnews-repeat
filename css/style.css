@@ -86,3 +86,26 @@ main {
     background: #943524;
     outline: none;
 }
+
+/* news cards */
+.news {
+    margin-top: 70px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    column-gap: 10px;
+    margin-bottom: 20px;
+}
+
+.card {
+    background: var(--red);
+    width: 50%; height: 200px;
+    border-radius: 8px;
+}
+
+.card-w {
+    width: 100%;
+}
