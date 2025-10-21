@@ -1,4 +1,328 @@
+:root {
+    --brown: #482C21;
+    --red: #A73E2B;
+    --redHover: #943524;
+    --orange: #D07E0E;
+    --orangeHolver: #BD730D;
+    --yellow: #E9DEB0;
+    --green: #2F615E;
+    --greenHolver: #275754;
+}
+
 * {
     margin: 0;
     padding: 0;
+}
+
+/* all links */
+a {
+    text-decoration: none;
+}
+
+/* all buttons */
+.wn-button {
+    font-size: 13.5pt;
+    color: whitesmoke;
+    border: none;
+    border-radius: 4px;
+    padding: 6px 12px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background .3s ease-in-out;
+}
+
+body {
+    background: var(--yellow);
+    font-family: arial, sans-serif;
+}
+
+/* ================= HEADER ================= */
+header {
+    padding: 25px 10vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    background: var(--brown);
+}
+/* logo */
+.logo a {
+    color: whitesmoke;
+    font-size: 24pt;
+}
+/* navigation bar options */
+.navbar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+.navbar-header li {
+    display: inline-block;
+    margin-left: 10px;
+    font-weight: bold;
+    font-size: 13pt;
+}
+
+.navbar-header a {
+    color: whitesmoke;
+}
+.navbar-header a:hover,
+.navbar-header a:focus,
+.navbar-header li.active > a {
+    color: rgb(223, 223, 223);
+    outline: none;
+}
+
+/* login button */
+#loginBtn {
+    margin-left: 30px;
+    font-size: 13pt;
+    background: var(--orange);
+}
+#loginBtn:hover {
+    background: var(--orangeHolver);
+}
+
+/* ================= LOGIN SCREEN ================= */
+/* background */
+.background-modal {
+    position: fixed;
+    display: none;
+    z-index: 1;
+    width: 100%; height: 100%;
+    top: 0; left: 0;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+/* login screen */
+#loginScreen {
+    position: relative;
+    background: whitesmoke;
+    width: 20vw;
+    border-radius: 8px;
+    margin: 150px auto 0 auto;
+    box-shadow: 0 6px 10px 8px rgba(0, 0, 0, 0.26);
+    animation-name: loginAnim;
+    animation-duration: .4s;
+}
+@keyframes loginAnim {
+    from {
+        top: -300px;
+        opacity: 0;
+    }
+    to {
+        top: 0;
+        opacity: 1;
+    }
+}
+
+/* login header */
+.login-header {
+    background: var(--brown);
+    color: whitesmoke;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.modal-header-title {
+    text-align: center;
+    padding: 8px 0;
+    font-size: 24pt;
+}
+
+/* close button */
+.close {
+    float: right;
+    font-size: 18pt;
+    background: rgba(182, 17, 17, 0.74);
+    padding: 0 6px;
+    margin: 6px 6px 0 0;
+    cursor: pointer;
+    border-radius: 4px;
+}
+.close:hover {
+    background: rgb(182, 17, 17);
+}
+
+/* login body */
+.login-body {
+    padding: 0 60px;
+    margin-top: 20px;
+}
+
+.usr-data {
+    margin-bottom: 20px;
+}
+
+.usr-data label {
+    font-weight: bold;
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.usr-data input {
+    display: block;
+    width: 100%;
+    font-size: 13pt;
+    padding: 3px 0;
+    text-indent: 6px;
+    border-radius: 4px;
+    border: 1px solid rgb(184, 184, 184);
+    font-style: italic;
+}
+.usr-data input:focus {
+    outline: none;
+    background: #f5edcc;
+}
+
+.login-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding-bottom: 15px;
+}
+
+/* create account */
+.login-links a {
+    color: rgb(34, 141, 241);
+}
+.login-links a:hover {
+    text-decoration: underline;
+}
+
+/* sign in */
+.login-links button {
+    background: var(--green);
+    font-size: 13pt;
+}
+.login-links button:hover {
+    background: var(--greenHolver);
+}
+
+/* ================= MAIN CONTENT ================= */
+main {
+    margin: 80px auto 0 auto;
+    width: 75vw;
+}
+
+/* categories buttons */
+.categories {
+    width: 42vw;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: normal;
+}
+
+.categories-items li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.categories-items button {
+    background: var(--red);
+    letter-spacing: 1px;
+}
+.categories-items button:hover,
+.categories-items button:focus,
+.categories-items li.active > button {
+    background: var(--redHover);
+    outline: none;
+}
+
+/* categories - dropdown */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+#dropdownBtn {
+    rotate: 90deg;
+    font-size: 14pt;
+    padding: 0 7px 9px 7px;
+    border-radius: 50%;
+    background: var(--red);
+}
+#dropdownBtn:hover,
+#dropdownBtn:focus {
+    background: var(--redHover);
+}
+
+#dropdownCont {
+    position: absolute;
+    z-index: 1;
+    display: none;
+    background: whitesmoke;
+    border-radius: 4px;
+    box-shadow: 0 4px 10px 4px rgba(0, 0, 0, 0.219);
+    color: rgb(26, 26, 26);
+}
+
+#dropdownCont li {
+    display: block;
+    padding: 10px 20px 10px 8px;
+    cursor: pointer;
+}
+#dropdownCont li:hover,
+#dropdownCont li:focus {
+    background: rgb(230, 230, 230);
+    outline: none;
+}
+/* categories - dropdown - first item */
+#dropdownCont .wn-f-item {
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+/* categories - dropdown - last item */
+#dropdownCont .wn-l-item {
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+/* news cards */
+.news {
+    margin-top: 70px;
+}
+/* cards */
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    column-gap: 15px;
+    margin-bottom: 50px;
+}
+.card {
+    width: 50%;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.card-w {
+    width: 100%;
+}
+/* image card */
+.card-img {
+    width: 100%;
+    height: 200px;
+    border-radius: 8px;
+    border: 1px solid rgb(185, 185, 185);
+}
+/* card body */
+.card-body {
+    padding: 0 4px;
+    font-size: 13.5pt;
+    margin: 4px 0 6px 0;
+    color: var(--brown);
+}
+/* card footer */
+.card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 0 4px;
+    color: var(--brown);
+}
+/* card category */
+.card-footer-category {
+    font-size: 9.5pt;
+}
+/* card date */
+.card-footer-date {
+    font-size: 9pt;
 }
