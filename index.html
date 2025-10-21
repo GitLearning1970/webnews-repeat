@@ -21,8 +21,35 @@
                 <li><a href="./top-news">Top News</a></li> <!-- top news -->
                 <li><a href="./contact.html">Contact Us</a></li>
             </ul>
+            <!-- login button -->
+            <button type="button" id="loginBtn" class="wn-button">Login</button>
         </nav> <!-- navigation bar /end -->
     </header> <!-- header /end -->
+
+    <div class="background-modal" id="loginModal"> <!-- background -->
+        <div id="loginScreen"> <!-- login screen -->
+            <div class="login-header"> <!-- login header -->
+                <span type="button" id="closeLogin" class="close">&times;</span>
+                <h2 class="modal-header-title">LOGIN</h2>
+            </div> <!-- login header /end --> 
+            <div class="login-body"> <!-- login body -->
+                <form action="" method="post">
+                    <div class="usr-data"> <!-- email -->
+                        <label for="loginEmail">Email:</label>
+                        <input type="email" name="email" id="loginEmail">
+                    </div> <!-- email /end -->
+                    <div class="usr-data"> <!-- password -->
+                        <label for="loginPass">Password:</label>
+                        <input type="password" name="password" id="loginPass">
+                    </div> <!-- password /end -->
+                    <div class="login-links"> <!-- links -->
+                        <a href="./register.html">Create account</a>
+                        <button type="button" class="wn-button">Sign in</button>
+                    </div> <!-- links /end -->
+                </form>
+            </div> <!-- login body /end -->
+        </div> <!-- login screen /end -->
+    </div> <!-- background /end -->
 
     <main role="main" id="newsCards"> <!-- main content -->
         <div class="categories"> <!-- categories -->
@@ -47,6 +74,7 @@
         </div> <!-- categories /end -->
     </main> <!-- main content /end -->
 
+    <script src="./js/login-screen.js"></script>
     <script src="./js/categories-dropdown.js"></script>
     <script src="./js/index-cards.js" type="module"></script>
 </body>
