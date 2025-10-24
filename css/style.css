@@ -30,18 +30,21 @@ a {
     cursor: pointer;
     transition: background .3s ease-in-out;
 }
+/* display flex */
+.wn-d-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
 
 body {
-    background: var(--yellow);
+    background: whitesmoke;
     font-family: arial, sans-serif;
 }
 
 /* ================= HEADER ================= */
 header {
     padding: 25px 10vw;
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
     background: var(--brown);
 }
 /* logo */
@@ -50,11 +53,6 @@ header {
     font-size: 24pt;
 }
 /* navigation bar options */
-.navbar-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-}
 .navbar-header li {
     display: inline-block;
     margin-left: 10px;
@@ -76,10 +74,10 @@ header {
 #loginBtn {
     margin-left: 30px;
     font-size: 13pt;
-    background: var(--orange);
+    background: var(--red);
 }
 #loginBtn:hover {
-    background: var(--orangeHolver);
+    background: var(--redHover);
 }
 
 /* ================= LOGIN SCREEN ================= */
@@ -175,9 +173,6 @@ header {
 }
 
 .login-links {
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
     padding-bottom: 15px;
 }
 
@@ -208,8 +203,6 @@ main {
 .categories {
     width: 42vw;
     margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
     align-items: normal;
 }
 
@@ -282,9 +275,6 @@ main {
 }
 /* cards */
 .row {
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
     column-gap: 15px;
     margin-bottom: 50px;
 }
@@ -312,9 +302,6 @@ main {
 }
 /* card footer */
 .card-footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
     padding: 0 4px;
     color: var(--brown);
 }
