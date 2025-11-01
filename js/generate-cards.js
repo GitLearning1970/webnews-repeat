@@ -11,8 +11,9 @@ const generateCards = function(amount) {
     for (let j = 0; j < amount; j++) {
         cardNum++
         // generate cards
-        card[j] = document.createElement('div')
+        card[j] = document.createElement('article')
         card[j].classList.add('card')
+        card[j].addEventListener('click', () => location.href = './news-page.html')
         // generate images
         cardImg[j] = document.createElement('img')
         cardImg[j].classList.add('card-img')
@@ -34,7 +35,7 @@ const generateCards = function(amount) {
         // generate card posting date
         cardFooterDate[j] = document.createElement('p')
         cardFooterDate[j].classList.add('card-footer-date')
-        cardFooterDate[j].innerText = 'DD / MM / AAAA'
+        cardFooterDate[j].innerText = 'MM / DD / YYYY'
 
         // append each title to each body of a card
         cardBody[j].appendChild(cardBodyTitle[j])

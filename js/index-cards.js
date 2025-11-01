@@ -1,8 +1,8 @@
 import rand from "./random-int.js"
 import genCards from "./generate-cards.js"
 
-const main = document.getElementById('newsCards')
-const news = document.createElement('div')
+const main = document.getElementById('mainContent')
+const news = document.createElement('section')
 news.classList.add('news')
 
 // function to generate news

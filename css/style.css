@@ -1,5 +1,6 @@
 :root {
     --brown: #482C21;
+    --black: rgb(41, 41, 41);
     --red: #A73E2B;
     --redHover: #943524;
     --orange: #D07E0E;
@@ -40,10 +41,11 @@ a {
 body {
     background: whitesmoke;
     font-family: arial, sans-serif;
+    color: var(--black);
 }
 
 /* ================= HEADER ================= */
-header {
+.menu-header {
     padding: 25px 10vw;
     background: var(--brown);
 }
@@ -280,7 +282,6 @@ main {
 }
 .card {
     width: 50%;
-    border-radius: 8px;
     cursor: pointer;
 }
 .card-w {
@@ -289,7 +290,7 @@ main {
 /* image card */
 .card-img {
     width: 100%;
-    height: 200px;
+    height: 20vh;
     border-radius: 8px;
     border: 1px solid rgb(185, 185, 185);
 }
@@ -298,12 +299,10 @@ main {
     padding: 0 4px;
     font-size: 13.5pt;
     margin: 4px 0 6px 0;
-    color: var(--brown);
 }
 /* card footer */
 .card-footer {
     padding: 0 4px;
-    color: var(--brown);
 }
 /* card category */
 .card-footer-category {
@@ -312,4 +311,91 @@ main {
 /* card date */
 .card-footer-date {
     font-size: 8.5pt;
+    font-style: italic;
+}
+
+/* ================= CONTAINER NEWS ================= */
+.news-container {
+    width: 75vw;
+    margin: 80px auto 0 auto;
+}
+
+/* news text and image */
+.news-content {
+    width: 70%;
+}
+
+/* header */
+.news-header {
+    margin-bottom: 25px;
+}
+.news-header-title {
+    font-size: 24pt;
+    margin-bottom: 2px;
+}
+.news-header-subtitle {
+    font-size: 14pt;
+    margin-bottom: 8px;
+}
+.news-header-signature {
+    padding-right: 55px;
+}
+.news-header-name {
+    font-size: 11pt;
+}
+.news-header-time {
+    font-size: 9pt;
+}
+
+/* image */
+.news-body-fig {
+    width: 95%;
+    margin-bottom: 35px;
+    color: rgb(141, 141, 141);
+}
+.news-body-fig img {
+    width: 100%;
+    height: 45vh;
+    border: 1px solid rgb(185, 185, 185);
+    margin-bottom: 2px;
+    border-radius: 8px;
+}
+.news-body-fig figcaption {
+    font-style: italic;
+    font-size: 10.5pt;
+    padding: 0 4px;
+}
+
+/* text */
+.news-body-text {
+    text-align: start;
+    padding-right: 80px;
+    line-height: 26px;
+    color: var(--black);
+}
+.news-body-text h2 {
+    font-size: 18pt;
+    margin: 40px auto 20px auto;
+}
+.news-body-text p {
+    font-size: 13pt;
+    margin-bottom: 15px;
+}
+
+/* aside content */
+.aside-content-title {
+    font-size: 18pt;
+    text-align: center;
+}
+
+.aside-cards {
+    margin-top: 40px;
+}
+
+.aside-cards .card {
+    margin-bottom: 50px;
+}
+
+.aside-cards .card-img {
+    height: 24vh;
 }
