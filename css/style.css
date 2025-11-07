@@ -8,6 +8,8 @@
     --yellow: #E9DEB0;
     --green: #2F615E;
     --greenHolver: #275754;
+    --btnGreen: rgb(24, 155, 24);
+    --btnGreenHolver: rgb(22, 138, 22);
 }
 
 * {
@@ -195,8 +197,8 @@ body {
     background: var(--greenHolver);
 }
 
-/* ================= MAIN CONTENT ================= */
-main {
+/* ================= MAIN CONTENT (index) ================= */
+#mainContent {
     margin: 80px auto 0 auto;
     width: 75vw;
 }
@@ -314,7 +316,7 @@ main {
     font-style: italic;
 }
 
-/* ================= CONTAINER NEWS ================= */
+/* ================= CONTAINER NEWS (news page) ================= */
 .news-container {
     width: 75vw;
     margin: 80px auto 0 auto;
@@ -387,15 +389,82 @@ main {
     font-size: 18pt;
     text-align: center;
 }
-
 .aside-cards {
     margin-top: 40px;
 }
-
 .aside-cards .card {
     margin-bottom: 50px;
 }
-
 .aside-cards .card-img {
     height: 24vh;
+}
+
+/* ================= LOGO AND REGISTER FORM (register) ================= */
+.container-register {
+    height: 100%;
+    align-items: flex-end;
+}
+
+/* logo */
+.logo-area {
+    position: relative;
+    width: 60%; height: 100%;
+    background: var(--red);
+}
+
+/* form */
+.form-area {
+    background: var(--yellow);
+    position: relative;
+    width: 40%; height: 100%;
+}
+
+.form-area-data {
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    background: whitesmoke;
+    box-shadow: 0 8px 14px rgba(0, 0, 0, 0.247);
+    border-radius: 8px;
+    padding: 20px 30px 0 30px;
+    width: 50%;
+}
+
+/* register labels and fields */
+.register-data {
+    margin-bottom: 25px;
+    column-gap: 15px;
+}
+
+.register-data label {
+    display: inline-block;
+    font-size: 13.5pt;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.register-data input {
+    width: 100%;
+    font-size: 14pt;
+    padding: 6px 0;
+    text-indent: 6px;
+    border: 1px solid rgb(199, 199, 199);
+    border-radius: 4px;
+}
+.register-data input:focus {
+    outline: none;
+}
+
+/* sing up button */
+.register-btn {
+    display: block;
+    background: var(--btnGreen);
+    width: 70%;
+    margin: 0 auto 15px auto;
+    padding: 8px 0;
+}
+.register-btn:hover,
+.register-btn:focus {
+    outline: none;
+    background: var(--btnGreenHolver);
 }

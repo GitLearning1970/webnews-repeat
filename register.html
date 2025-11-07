@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" style="height: 100%;">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>WebNews | Create account</title>
+
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body style="height: 100%;">
+    <header class="menu-header"> <!-- header -->
+        <div class="logo"> <!-- logo -->
+            <h1><a href="./index.html">WebNews</a></h1>
+        </div> <!-- /end logo -->
+    </header> <!-- /end header -->
+
+    <main role="main" class="container-register wn-d-flex">
+        <div class="logo-area"> <!-- logo area -->
+        </div> <!-- /end logo area -->
+        <div class="form-area"> <!-- form area -->
+            <form method="post" class="form-area-data"> <!-- the form -->
+                <div class="register-data"> <!-- username -->
+                    <label for="regName">Username:</label>
+                    <input type="text" id="regName">
+                </div> <!-- /end username -->
+                <div class="register-data"> <!-- email -->
+                    <label for="regEmail">Email:</label>
+                    <input type="email" id="regEmail">
+                </div> <!-- /end email -->
+                <div class="register-data wn-d-flex">
+                    <div class="register-data-password"> <!-- password -->
+                        <label for="regPass">Password:</label>
+                        <input type="password" id="regPass" maxlength="16" minlength="8">
+                    </div> <!-- /end password -->
+                    <div class="register-data-password"> <!-- confirm password -->
+                        <label for="regConfPass">Confirm password:</label>
+                        <input type="password" id="regConfPass" maxlength="16" minlength="8">
+                    </div> <!-- /end confirm password -->
+                </div>
+                <button type="button" class="register-btn wn-button">Sign up</button>
+            </form> <!-- /end the form -->
+        </div> <!-- /end form area -->
+    </main>
+</body>
+</html>
