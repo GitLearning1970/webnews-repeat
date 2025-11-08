@@ -39,6 +39,37 @@ a {
     justify-content: space-between;
     align-items: baseline;
 }
+/* input data */
+.usr-data {
+    margin-bottom: 25px;
+}
+.usr-password {
+    column-gap: 15px;
+}
+.usr-data label {
+    display: inline-block;
+    font-size: 13.5pt;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+.usr-data input {
+    width: 100%;
+    font-size: 12pt;
+    padding: 6px 0;
+    text-indent: 6px;
+    border: 1px solid rgb(199, 199, 199);
+    border-radius: 4px;
+    transition: box-shadow .2s ease-out;
+}
+.usr-data input:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px var(--yellow);
+    border: 1px solid #f1ce41;
+    background: rgb(231, 243, 248);
+}
+.usr-data input::placeholder {
+    color: rgb(212, 212, 212);
+}
 
 body {
     background: whitesmoke;

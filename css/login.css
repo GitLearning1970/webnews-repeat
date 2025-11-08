@@ -65,28 +65,6 @@
     margin-top: 20px;
 }
 
-.usr-data {
-    margin-bottom: 20px;
-}
-
-.usr-data label {
-    font-weight: bold;
-    display: inline-block;
-    margin-bottom: 5px;
-}
-
-.usr-data input {
-    width: 100%;
-    font-size: 13pt;
-    padding: 3px 0;
-    text-indent: 6px;
-    border-radius: 4px;
-    border: 1px solid rgb(184, 184, 184);
-}
-.usr-data input:focus {
-    outline: none;
-}
-
 .login-links {
     padding-bottom: 15px;
 }
