@@ -1,0 +1,94 @@
+/* ================= LOGO AND REGISTER FORM (register) ================= */
+.container-register {
+    height: 100%;
+    align-items: flex-end;
+}
+
+/* logo */
+.logo-area {
+    position: relative;
+    width: 60%; height: 100%;
+    background: var(--red);
+}
+
+.logo-set {
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+/* title */
+.logo-set-title {
+    font-size: 20pt;
+    line-height: 40px;
+    color: whitesmoke;
+    margin-top: 30px;
+}
+
+.logo-set a {
+    color: #f38c79;
+}
+
+/* form */
+.form-area {
+    background: var(--yellow);
+    position: relative;
+    width: 40%; height: 100%;
+}
+
+.form-area form {
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    background: whitesmoke;
+    box-shadow: 0 8px 14px rgba(0, 0, 0, 0.247);
+    border-radius: 8px;
+    padding: 20px 30px 0 30px;
+    width: 50%;
+}
+
+/* register labels and fields */
+.register-data {
+    margin-bottom: 25px;
+    column-gap: 15px;
+}
+
+.register-data label {
+    display: inline-block;
+    font-size: 13.5pt;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.register-data input {
+    width: 100%;
+    font-size: 12pt;
+    padding: 6px 0;
+    text-indent: 6px;
+    border: 1px solid rgb(199, 199, 199);
+    border-radius: 4px;
+    transition: box-shadow .2s ease-out;
+}
+.register-data input:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px var(--yellow);
+    border: 1px solid #f1ce41;
+    background: rgb(231, 243, 248);
+}
+.register-data input::placeholder {
+    color: rgb(212, 212, 212);
+}
+
+/* sing up button */
+.register-btn {
+    display: block;
+    background: var(--btnGreen);
+    width: 70%;
+    margin: 0 auto 15px auto;
+    padding: 8px 0;
+}
+.register-btn:hover,
+.register-btn:focus {
+    outline: none;
+    background: var(--btnGreenHolver);
+}

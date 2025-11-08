@@ -1,0 +1,76 @@
+/* ================= MAIN CONTENT (index) ================= */
+#mainContent {
+    margin: 80px auto 0 auto;
+    width: 75vw;
+}
+
+/* categories buttons */
+.categories {
+    width: 42vw;
+    margin: 0 auto;
+    align-items: normal;
+}
+
+.categories-items li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.categories-items button {
+    background: var(--red);
+    letter-spacing: 1px;
+}
+.categories-items button:hover,
+.categories-items button:focus,
+.categories-items li.active > button {
+    background: var(--redHover);
+    outline: none;
+}
+
+/* categories - dropdown */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+#dropdownBtn {
+    rotate: 90deg;
+    font-size: 14pt;
+    padding: 0 7px 9px 7px;
+    border-radius: 50%;
+    background: var(--red);
+}
+#dropdownBtn:hover,
+#dropdownBtn:focus {
+    background: var(--redHover);
+}
+
+#dropdownCont {
+    position: absolute;
+    z-index: 1;
+    display: none;
+    background: whitesmoke;
+    border-radius: 4px;
+    box-shadow: 0 4px 10px 4px rgba(0, 0, 0, 0.219);
+    color: rgb(26, 26, 26);
+}
+
+#dropdownCont li {
+    display: block;
+    padding: 10px 20px 10px 8px;
+    cursor: pointer;
+}
+#dropdownCont li:hover,
+#dropdownCont li:focus {
+    background: rgb(230, 230, 230);
+    outline: none;
+}
+/* categories - dropdown - first item */
+#dropdownCont .wn-f-item {
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+/* categories - dropdown - last item */
+#dropdownCont .wn-l-item {
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+}

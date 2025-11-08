@@ -1,0 +1,37 @@
+/* ================= HEADER ================= */
+.menu-header {
+    padding: 25px 10vw;
+    background: var(--brown);
+}
+/* logo */
+.logo a {
+    color: whitesmoke;
+    font-size: 24pt;
+}
+/* navigation bar options */
+.navbar-header li {
+    display: inline-block;
+    margin-left: 10px;
+    font-weight: bold;
+    font-size: 13pt;
+}
+
+.navbar-header a {
+    color: whitesmoke;
+}
+.navbar-header a:hover,
+.navbar-header a:focus,
+.navbar-header li.active > a {
+    color: rgb(223, 223, 223);
+    outline: none;
+}
+
+/* login button */
+#loginBtn {
+    margin-left: 30px;
+    font-size: 13pt;
+    background: var(--red);
+}
+#loginBtn:hover {
+    background: var(--redHover);
+}

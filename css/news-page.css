@@ -1,0 +1,82 @@
+/* ================= CONTAINER NEWS (news page) ================= */
+.news-container {
+    width: 75vw;
+    margin: 80px auto 0 auto;
+}
+
+/* news text and image */
+.news-content {
+    width: 70%;
+}
+
+/* header */
+.news-header {
+    margin-bottom: 25px;
+}
+.news-header-title {
+    font-size: 24pt;
+    margin-bottom: 2px;
+}
+.news-header-subtitle {
+    font-size: 14pt;
+    margin-bottom: 8px;
+}
+.news-header-signature {
+    padding-right: 55px;
+}
+.news-header-name {
+    font-size: 11pt;
+}
+.news-header-time {
+    font-size: 9pt;
+}
+
+/* image */
+.news-body-fig {
+    width: 95%;
+    margin-bottom: 35px;
+    color: rgb(141, 141, 141);
+}
+.news-body-fig img {
+    width: 100%;
+    height: 45vh;
+    border: 1px solid rgb(185, 185, 185);
+    margin-bottom: 2px;
+    border-radius: 8px;
+}
+.news-body-fig figcaption {
+    font-style: italic;
+    font-size: 10.5pt;
+    padding: 0 4px;
+}
+
+/* text */
+.news-body-text {
+    text-align: start;
+    padding-right: 80px;
+    line-height: 26px;
+    color: var(--black);
+}
+.news-body-text h2 {
+    font-size: 18pt;
+    margin: 40px auto 20px auto;
+}
+.news-body-text p {
+    font-size: 13pt;
+    margin-bottom: 15px;
+}
+
+/* aside content */
+.aside-content-title {
+    font-size: 18pt;
+    text-align: center;
+}
+.aside-cards {
+    margin-top: 40px;
+}
+.aside-cards .card {
+    margin-bottom: 50px;
+}
+.aside-cards .card-img {
+    height: 24vh;
+}
