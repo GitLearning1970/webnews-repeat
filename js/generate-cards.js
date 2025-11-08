@@ -17,7 +17,7 @@ const generateCards = function(amount) {
         // generate images
         cardImg[j] = document.createElement('img')
         cardImg[j].classList.add('card-img')
-        cardImg[j].src = `./res/image-example.jpg`
+        cardImg[j].src = `https://picsum.photos/300/200?random=${cardNum}`
         // generate card bodies
         cardBody[j] = document.createElement('div')
         cardBody[j].classList.add('card-body')

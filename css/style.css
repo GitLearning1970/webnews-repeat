@@ -162,18 +162,15 @@ body {
 }
 
 .usr-data input {
-    display: block;
     width: 100%;
     font-size: 13pt;
     padding: 3px 0;
     text-indent: 6px;
     border-radius: 4px;
     border: 1px solid rgb(184, 184, 184);
-    font-style: italic;
 }
 .usr-data input:focus {
     outline: none;
-    background: #f5edcc;
 }
 
 .login-links {
@@ -190,11 +187,11 @@ body {
 
 /* sign in */
 .login-links button {
-    background: var(--green);
+    background: var(--btnGreen);
     font-size: 13pt;
 }
 .login-links button:hover {
-    background: var(--greenHolver);
+    background: var(--btnGreenHolver);
 }
 
 /* ================= MAIN CONTENT (index) ================= */
@@ -412,6 +409,24 @@ body {
     background: var(--red);
 }
 
+.logo-set {
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+/* title */
+.logo-set-title {
+    font-size: 20pt;
+    line-height: 40px;
+    color: whitesmoke;
+    margin-top: 30px;
+}
+
+.logo-set a {
+    color: #f38c79;
+}
+
 /* form */
 .form-area {
     background: var(--yellow);
@@ -419,7 +434,7 @@ body {
     width: 40%; height: 100%;
 }
 
-.form-area-data {
+.form-area form {
     position: absolute;
     top: 50%; left: 50%;
     transform: translate(-50%, -50%);
@@ -445,14 +460,21 @@ body {
 
 .register-data input {
     width: 100%;
-    font-size: 14pt;
+    font-size: 12pt;
     padding: 6px 0;
     text-indent: 6px;
     border: 1px solid rgb(199, 199, 199);
     border-radius: 4px;
+    transition: box-shadow .3s ease-out;
 }
 .register-data input:focus {
     outline: none;
+    box-shadow: 0 0 0 3px #E9DEB0;
+    border: 1px solid #f1ce41;
+    background: rgb(231, 243, 248);
+}
+.register-data input::placeholder {
+    color: rgb(212, 212, 212);
 }
 
 /* sing up button */
