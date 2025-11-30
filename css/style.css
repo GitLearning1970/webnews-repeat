@@ -1,0 +1,54 @@
+:root {
+    --grey: rgb(66, 66, 66);
+    --grey2: rgb(218, 218, 218);
+    --black: rgb(58, 58, 58);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: whitesmoke;
+    font-family: arial, sans-serif;
+}
+
+/* all links */
+a {
+    text-decoration: none;
+}
+
+/* ====================== HEADER ====================== */
+.menu-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 15px 8vw;
+    background: var(--grey);
+}
+/* logo */
+.logo a {
+    color: whitesmoke;
+    font-size: 22pt;
+}
+
+/* navigation bar */
+.navbar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    font-size: 13pt;
+}
+.navbar-header li {
+    display: inline-block;
+    margin-left: 10px;
+    font-weight: bold;
+}
+.navbar-header a {
+    color: whitesmoke;
+}
+.navbar-header li:hover > a,
+.navbar-header li.active > a {
+    color: var(--grey2);
+}
