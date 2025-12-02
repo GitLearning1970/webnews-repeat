@@ -53,6 +53,23 @@ a {
     color: var(--grey2);
 }
 
+/* login button */
+.login-btn {
+    margin-left: 40px;
+    font-size: 13pt;
+    border: none;
+    border-radius: 4px;
+    padding: 6px 10px;
+    cursor: pointer;
+    font-weight: bold;
+    background: whitesmoke;
+    transition: background .3s ease-out;
+    color: var(--grey);
+}
+.login-btn:hover {
+    background: rgb(226, 226, 226);
+}
+
 /* ====================== MAIN CONTENT ====================== */
 main {
     width: 75vw;
