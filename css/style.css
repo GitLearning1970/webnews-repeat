@@ -70,6 +70,109 @@ a {
     background: rgb(226, 226, 226);
 }
 
+/* ====================== LOGIN SCREEN ====================== */
+/* background */
+.modal-background {
+    display: block;
+    width: 100%; height: 100%;
+    position: fixed;
+    z-index: 1;
+    left: 0; top: 0;
+    background: rgba(0, 0, 0, 0.404);
+}
+/* screen */
+.modal-content {
+    position: relative;
+    margin: 0 auto;
+    width: 20vw;
+    background: whitesmoke;
+    border-radius: 8px;
+    margin-top: 100px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.418);
+}
+/* header */
+.modal-header {
+    background: rgb(66, 66, 66);
+    color: whitesmoke;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+.modal-title {
+    text-align: center;
+    font-size: 20pt;
+    padding: 10px 0;
+}
+.close {
+    float: right;
+    font-size: 18pt;
+    margin: 8px 8px 0 0;
+    background: rgb(197, 60, 60);
+    padding: 0 6px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.close:hover,
+.close:focus {
+    background: rgb(216, 66, 66);
+    outline: none;
+}
+/* body */
+.modal-body {
+    padding: 15px 60px;
+}
+.modal-body .usr-data {
+    margin-bottom: 20px;
+}
+.modal-body label {
+    display: block;
+    font-size: 13.5pt;
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+.modal-body input {
+    display: block;
+    width: 100%;
+    font-size: 12pt;
+    text-indent: 6px;
+    padding: 5px 0;
+    border: 1px solid rgb(206, 206, 206);
+    border-radius: 4px;
+}
+.modal-body input:focus {
+    outline: none;
+}
+/* links */
+.modal-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-top: 35px;
+}
+.modal-links a {
+    color: rgb(79, 172, 202);
+}
+.modal-links a:hover,
+.modal-links a:focus {
+    text-decoration: underline;
+    outline: none;
+}
+.modal-links button {
+    cursor: pointer;
+    padding: 6px 12px;
+    font-size: 12pt;
+    border: none;
+    border-radius: 4px;
+    background: rgb(19, 160, 14);
+    color: whitesmoke;
+    font-weight: bold;
+    transition: background .3s ease-out;
+}
+.modal-links button:hover,
+.modal-links button:focus {
+    background: rgb(17, 145, 13);
+    outline: none;
+}
+
 /* ====================== MAIN CONTENT ====================== */
 main {
     width: 75vw;
