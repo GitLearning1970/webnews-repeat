@@ -1,0 +1,54 @@
+import rand from "./randInt.js"
+
+const main = document.querySelector('main')
+const news = document.createElement('div')
+news.classList.add('news')
+
+function mainNews() {
+    const row = []
+    const card = []
+
+    const rowsAmount = 8
+
+    // create rows
+    for (let i = 0; i < rowsAmount; i++) {
+        row[i] = document.createElement('div')
+        row[i].classList.add('news-row')
+
+        const cardsAmount = rand(3, 5)
+
+        // create cards
+        for (let j = 0; j < cardsAmount; j++) {
+            card[j] = document.createElement('div')
+            card[j].classList.add('card')
+            
+            row[i].appendChild(card[j])
+        }
+
+        /* increase some cards size based 
+            based on amount of cards*/
+        switch (cardsAmount) {
+            case 3: {
+                let num, indexCard
+                for (let i = 0; i < 2; i++) {
+                    while (indexCard == num) {
+                        indexCard = rand(0, 2)
+                    }
+                    num = indexCard
+                    card[indexCard].classList.add('card-w')
+                }
+                break
+            }
+            case 4:
+                let indexCard = rand(0, 3)
+                card[indexCard].classList.add('card-w')
+                break
+            default:
+                break
+        }
+        news.appendChild(row[i])
+    }
+    main.appendChild(news)
+}
+
+mainNews()
