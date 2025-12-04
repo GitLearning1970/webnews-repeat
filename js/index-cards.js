@@ -1,4 +1,5 @@
 import rand from "./randInt.js"
+import genCard from "./genCards.js"
 
 const main = document.querySelector('main')
 const news = document.createElement('div')
@@ -6,8 +7,6 @@ news.classList.add('news')
 
 function mainNews() {
     const row = []
-    const card = []
-
     const rowsAmount = 8
 
     // create rows
@@ -16,17 +15,15 @@ function mainNews() {
         row[i].classList.add('news-row')
 
         const cardsAmount = rand(3, 5)
-
+        
         // create cards
-        for (let j = 0; j < cardsAmount; j++) {
-            card[j] = document.createElement('div')
-            card[j].classList.add('card')
-            
-            row[i].appendChild(card[j])
-        }
-
-        /* increase some cards size based 
-            based on amount of cards*/
+        const card = genCard(cardsAmount)
+        
+        // put all cards on rows
+        card.forEach(cd => row[i].appendChild(cd))
+        
+        /* increase some cards size
+            based on amount of cards */
         switch (cardsAmount) {
             case 3: {
                 let num, indexCard
