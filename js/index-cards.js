@@ -1,5 +1,5 @@
 import rand from "./randInt.js"
-import genCard from "./genCards.js"
+import genCard from "./gen-cards.js"
 
 const main = document.querySelector('main')
 const news = document.createElement('div')
