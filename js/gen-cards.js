@@ -38,7 +38,7 @@ function generateCards(amount) {
         cardDate[j].classList.add('card-date')
 
         cardBody[j].appendChild(cardTitle[j])
-        cardFooter[j].appendChild(cardCategory[j], cardDate[j])
+        cardFooter[j].append(cardCategory[j], cardDate[j])
         card[j].append(cardImg[j], cardBody[j], cardFooter[j])
     }
     return card
