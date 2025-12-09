@@ -1,7 +1,7 @@
 :root {
-    --grey: rgb(66, 66, 66);
-    --grey2: rgb(218, 218, 218);
-    --black: rgb(58, 58, 58);
+    --black: rgb(66, 66, 66);
+    --black2: rgb(41, 41, 41);
+    --white: rgb(218, 218, 218);
 }
 
 * {
@@ -25,12 +25,15 @@ a {
     justify-content: space-between;
     align-items: baseline;
     padding: 15px 8vw;
-    background: var(--grey);
+    background: var(--black);
 }
 /* logo */
 .logo a {
     color: whitesmoke;
     font-size: 22pt;
+}
+.logo a:focus {
+    outline: none;
 }
 
 /* navigation bar */
@@ -49,8 +52,143 @@ a {
     color: whitesmoke;
 }
 .navbar-header li:hover > a,
-.navbar-header li.active > a {
-    color: var(--grey2);
+.navbar-header .active > a,
+.navbar-header a:focus {
+    color: var(--white);
+    outline: none;
+}
+
+/* login button */
+.login-btn {
+    margin-left: 40px;
+    font-size: 13pt;
+    border: none;
+    border-radius: 4px;
+    padding: 6px 10px;
+    cursor: pointer;
+    font-weight: bold;
+    background: whitesmoke;
+    transition: background .3s ease-out;
+    color: var(--black);
+}
+.login-btn:hover {
+    background: var(--white);
+}
+
+/* ====================== LOGIN SCREEN ====================== */
+/* background */
+.modal-background {
+    display: none;
+    width: 100%; height: 100%;
+    position: fixed;
+    z-index: 1;
+    left: 0; top: 0;
+    background: rgba(0, 0, 0, 0.404);
+}
+/* screen */
+.modal-content {
+    position: relative;
+    margin: 0 auto;
+    width: 20vw;
+    background: whitesmoke;
+    border-radius: 8px;
+    margin-top: 100px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.418);
+    animation-name: animLogin;
+    animation-duration: .4s;
+}
+/* login animation */
+@keyframes animLogin {
+    from {
+        top: -300px;
+        opacity: 0;
+    }
+    to {
+        top: 0;
+        opacity: 1; 
+    }
+}
+/* header */
+.modal-header {
+    background: rgb(66, 66, 66);
+    color: whitesmoke;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+.modal-title {
+    text-align: center;
+    font-size: 20pt;
+    padding: 10px 0;
+}
+.close {
+    float: right;
+    font-size: 18pt;
+    margin: 8px 8px 0 0;
+    background: rgb(197, 60, 60);
+    padding: 0 6px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.close:hover,
+.close:focus {
+    background: rgb(216, 66, 66);
+    outline: none;
+}
+/* body */
+.modal-body {
+    padding: 15px 60px;
+}
+.modal-body .usr-data {
+    margin-bottom: 20px;
+}
+.modal-body label {
+    display: block;
+    font-size: 13.5pt;
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+.modal-body input {
+    display: block;
+    width: 100%;
+    font-size: 12pt;
+    text-indent: 6px;
+    padding: 5px 0;
+    border: 1px solid var(--white);
+    border-radius: 4px;
+}
+.modal-body input:focus {
+    outline: none;
+}
+/* links */
+.modal-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-top: 35px;
+}
+.modal-links a {
+    color: rgb(79, 172, 202);
+}
+.modal-links a:hover,
+.modal-links a:focus {
+    text-decoration: underline;
+    outline: none;
+}
+.modal-links button {
+    cursor: pointer;
+    padding: 6px 12px;
+    font-size: 12pt;
+    border: none;
+    border-radius: 4px;
+    background: rgb(19, 160, 14);
+    color: whitesmoke;
+    font-weight: bold;
+    transition: background .3s ease-out;
+}
+.modal-links button:hover,
+.modal-links button:focus {
+    background: rgb(17, 145, 13);
+    outline: none;
 }
 
 /* ====================== MAIN CONTENT ====================== */
@@ -62,27 +200,84 @@ main {
 /* categories */
 .categories {
     display: flex;
-    justify-content: center;
-    column-gap: 10px;
+    justify-content: space-between;
+    align-items: normal;
+    max-width: 52%;
+    margin: 0 auto;
 }
-.categories li {
+
+/* categories items */
+.categories-items li {
     display: inline-block;
+    margin-right: 4px;
 }
-.categories button {
+.categories-items button {
     font-size: 13pt;
     padding: 6px 10px;
     font-weight: bold;
     border: none;
     border-radius: 4px;
-    background: var(--grey);
+    background: var(--black);
     color: whitesmoke;
     cursor: pointer;
     transition: background .3s ease-out;
     letter-spacing: 1px;
 }
-.categories button:hover,
-.categories li.active > button {
+.categories-items button:hover,
+.categories-items button:focus, 
+.categories-items .active > button {
+    background: var(--black2);
+    outline: none;
+}
+
+/* categories dropdown */
+.dropdown-btn {
+    rotate: 90deg;
+    font-size: 14pt;
+    font-weight: bold;
+    padding: 0 7px 9px 7px;
+    border: none;
+    border-radius: 50%;
     background: var(--black);
+    color: whitesmoke;
+    cursor: pointer;
+    transition: background .3s ease-out;
+}
+.dropdown-btn:hover,
+.dropdown-btn:focus {
+    background: var(--black2);
+    outline: none;
+}
+
+/* dropdown menu */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    background: whitesmoke;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.412);
+    position: absolute;
+    z-index: 1;
+    border-radius: 8px;
+}
+.dropdown-content li {
+    display: block;
+    padding: 8px 20px;
+    cursor: pointer;
+}
+.dropdown-content li:hover {
+    background: var(--white);
+}
+/* dropdown menu - first and last item */
+.dropdown-content .drop-f {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+.dropdown-content .drop-l {
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
 }
 
 /* cards */
@@ -105,7 +300,7 @@ main {
 }
 .card-img {
     width: 100%; height: 100%;
-    border: 1px solid rgb(199, 199, 199);
+    border: 1px solid var(--white);
     border-radius: 8px;
 }
 /* card body */
@@ -123,7 +318,7 @@ main {
     align-items: baseline;
     padding: 0 4px;
     font-style: italic;
-    color: rgb(133, 133, 133);
+    color: var(--black);
 }
 .card-category {
     font-size: 10pt;

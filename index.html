@@ -22,26 +22,63 @@
                 <li><a href="./top-news.html">Top News</a></li> <!-- top news -->
                 <li><a href="./contact.html">Contact Us</a></li>
             </ul>
+
+            <button type="button" class="login-btn">Login</button>
         </nav> <!-- navigation bar /end -->
     </header> <!-- header /end -->
 
+    <div class="modal-background"> <!-- login background -->
+        <div class="modal-content"> <!-- login screen -->
+            <div class="modal-header"> <!-- login header -->
+                <span class="close">&times;</span>
+                <h2 class="modal-title">LOGIN</h2>
+            </div> <!-- login header /end -->
+            <div class="modal-body"> <!-- login body -->
+                <form method="post">
+                    <div class="usr-data"> <!-- email -->
+                        <label for="usrEmail">Email:</label>
+                        <input type="email" id="usrEmail">
+                    </div> <!-- email /end -->
+                    <div class="usr-data"> <!-- password -->
+                        <label for="usrPass">Password:</label>
+                        <input type="password" id="usrPass" minlength="8" maxlength="16">
+                    </div> <!-- password /end -->
+                </form>
+                <div class="modal-links">
+                    <a href="./register.html">Create account</a>
+                    <button type="button">Sign in</button>
+                </div>
+            </div> <!-- login body /end -->
+        </div> <!-- login screen /end -->  
+    </div> <!-- login background /end -->
+
     <main role="main"> <!-- main content -->
-        <ul class="categories"> <!-- categories -->
-            <li><button type="button">Technology</button></li>
-            <li><button type="button">Games</button></li>
-            <li><button type="button">Entertainment</button></li>
-            <li><button type="button">Sports</button></li>
-            <li><button type="button">Cience</button></li>
-            <li><button type="button">Home & Life</button></li>
-            <li><button type="button">Business</button></li>
-            <li><button type="button">Arts</button></li>
-            <li><button type="button">Motorsport</button></li>
-            <li><button type="button">Life Style</button></li>
-            <li><button type="button">Health</button></li>
-            <li><button type="button">Food</button></li>
-        </ul> <!-- categories /end -->
+        <div class="categories"> <!-- categories -->
+            <ul class="categories-items"> <!-- categories buttons -->
+                <li><button type="button">Technology</button></li>
+                <li><button type="button">Games</button></li>
+                <li><button type="button">Entertainment</button></li>
+                <li><button type="button">Sports</button></li>
+                <li><button type="button">Cience</button></li>
+                <li><button type="button">Home & Life</button></li>
+            </ul> <!-- categories buttons /end -->
+            
+            <div class="dropdown"> <!-- dropdown -->
+                <button type="button" class="dropdown-btn">...</button>
+                <ul class="dropdown-content"> <!-- dropdown content -->
+                    <li class="drop-f">Motorsport</li>
+                    <li>Life Style</li>
+                    <li>Health</li>
+                    <li>Food</li>
+                    <li>Business</li>
+                    <li class="drop-l">Arts</li>
+                </ul> <!-- dropdown content /end -->
+            </div> <!-- dropdown /end -->
+        </div> <!-- categories /end -->
     </main> <!-- main content /end -->
 
+    <script src="./js/login-screen.js"></script>
+    <script src="./js/dropdown.js"></script>
     <script src="./js/index-cards.js" type="module"></script>
 </body>
 </html>
