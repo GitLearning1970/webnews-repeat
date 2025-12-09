@@ -1,7 +1,7 @@
 :root {
-    --grey: rgb(66, 66, 66);
-    --grey2: rgb(218, 218, 218);
-    --black: rgb(58, 58, 58);
+    --black: rgb(66, 66, 66);
+    --black2: rgb(41, 41, 41);
+    --white: rgb(218, 218, 218);
 }
 
 * {
@@ -25,12 +25,15 @@ a {
     justify-content: space-between;
     align-items: baseline;
     padding: 15px 8vw;
-    background: var(--grey);
+    background: var(--black);
 }
 /* logo */
 .logo a {
     color: whitesmoke;
     font-size: 22pt;
+}
+.logo a:focus {
+    outline: none;
 }
 
 /* navigation bar */
@@ -49,8 +52,10 @@ a {
     color: whitesmoke;
 }
 .navbar-header li:hover > a,
-.navbar-header li.active > a {
-    color: var(--grey2);
+.navbar-header .active > a,
+.navbar-header a:focus {
+    color: var(--white);
+    outline: none;
 }
 
 /* ====================== MAIN CONTENT ====================== */
@@ -62,27 +67,84 @@ main {
 /* categories */
 .categories {
     display: flex;
-    justify-content: center;
-    column-gap: 10px;
+    justify-content: space-between;
+    align-items: normal;
+    max-width: 52%;
+    margin: 0 auto;
 }
-.categories li {
+
+/* categories items */
+.categories-items li {
     display: inline-block;
+    margin-right: 4px;
 }
-.categories button {
+.categories-items button {
     font-size: 13pt;
     padding: 6px 10px;
     font-weight: bold;
     border: none;
     border-radius: 4px;
-    background: var(--grey);
+    background: var(--black);
     color: whitesmoke;
     cursor: pointer;
     transition: background .3s ease-out;
     letter-spacing: 1px;
 }
-.categories button:hover,
-.categories li.active > button {
+.categories-items button:hover,
+.categories-items button:focus, 
+.categories-items .active > button {
+    background: var(--black2);
+    outline: none;
+}
+
+/* categories dropdown */
+.dropdown-btn {
+    rotate: 90deg;
+    font-size: 14pt;
+    font-weight: bold;
+    padding: 0 7px 9px 7px;
+    border: none;
+    border-radius: 50%;
     background: var(--black);
+    color: whitesmoke;
+    cursor: pointer;
+    transition: background .3s ease-out;
+}
+.dropdown-btn:hover,
+.dropdown-btn:focus {
+    background: var(--black2);
+    outline: none;
+}
+
+/* dropdown menu */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    background: whitesmoke;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.412);
+    position: absolute;
+    z-index: 1;
+    border-radius: 8px;
+}
+.dropdown-content li {
+    display: block;
+    padding: 8px 20px;
+    cursor: pointer;
+}
+.dropdown-content li:hover {
+    background: var(--white);
+}
+/* dropdown menu - first and last item */
+.dropdown-content .drop-f {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+.dropdown-content .drop-l {
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
 }
 
 /* cards */
