@@ -1,3 +1,9 @@
+:root {
+    --dark: rgb(59, 59, 59);
+    --dark2: rgb(46, 46, 46);
+    --white: rgb(204, 204, 204);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -18,7 +24,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
-    background: rgb(59, 59, 59);
+    background: var(--dark);
     padding: 15px 10vw;
 }
 
@@ -26,12 +32,16 @@ header {
 .logo a {
     color: whitesmoke;
 }
+.logo a:focus {
+    outline: none;
+}
 
 /* navigation bar on header */
 .navbar-header li {
     display: inline-block;
     font-weight: bold;
     margin-left: 20px;
+    font-size: 12pt;
 }
 .navbar-header a {
     color: whitesmoke;
@@ -39,6 +49,42 @@ header {
 .navbar-header a:hover,
 .navbar-header a:focus,
 .navbar-header li.active > a {
-    color: rgb(204, 204, 204);
+    color: var(--white);
+    outline: none;
+}
+
+/* =================== MAIN CONTENT =================== */
+main {
+    width: 75vw;
+    margin: 75px auto 0 auto;
+}
+
+/* labels */
+.labels ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.labels li {
+    display: inline-block;
+}
+
+.labels button {
+    font-size: 13.5pt;
+    padding: 6px 10px;
+    background: var(--dark);
+    color: whitesmoke;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+    letter-spacing: 1px;
+    transition: background .3s ease-out;
+}
+.labels button:hover,
+.labels button:focus,
+.labels li.active > button {
+    background: var(--dark2);
     outline: none;
 }
