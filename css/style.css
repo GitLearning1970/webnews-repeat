@@ -7,3 +7,38 @@ body {
     background: whitesmoke;
     font-family: arial, sans-serif;
 }
+
+/* all links */
+a {
+    text-decoration: none;
+}
+
+/* =================== HEADER =================== */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    background: rgb(59, 59, 59);
+    padding: 15px 10vw;
+}
+
+/* site logo */
+.logo a {
+    color: whitesmoke;
+}
+
+/* navigation bar on header */
+.navbar-header li {
+    display: inline-block;
+    font-weight: bold;
+    margin-left: 20px;
+}
+.navbar-header a {
+    color: whitesmoke;
+}
+.navbar-header a:hover,
+.navbar-header a:focus,
+.navbar-header li.active > a {
+    color: rgb(204, 204, 204);
+    outline: none;
+}
