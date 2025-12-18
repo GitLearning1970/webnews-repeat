@@ -1,3 +1,9 @@
+:root {
+    --dark: rgb(59, 59, 59);
+    --dark2: rgb(46, 46, 46);
+    --white: rgb(221, 221, 221);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -6,4 +12,313 @@
 body {
     background: whitesmoke;
     font-family: arial, sans-serif;
+}
+
+/* all links */
+a {
+    text-decoration: none;
+}
+
+/* =================== HEADER =================== */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    background: var(--dark);
+    padding: 15px 10vw;
+}
+
+/* site logo */
+.logo a {
+    color: whitesmoke;
+}
+.logo a:focus {
+    outline: none;
+}
+
+/* navigation bar on header */
+.navbar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+.navbar-header li {
+    display: inline-block;
+    font-weight: bold;
+    margin-left: 20px;
+    font-size: 12pt;
+}
+.navbar-header a {
+    color: whitesmoke;
+}
+.navbar-header a:hover,
+.navbar-header a:focus,
+.navbar-header li.active > a {
+    color: var(--white);
+    outline: none;
+}
+
+/* login button */
+.login-btn {
+    margin-left: 40px;
+    padding: 6px 10px;
+    font-size: 12pt;
+    background: whitesmoke;
+    color: var(--dark);
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background .3s ease-out;
+}
+.login-btn:hover,
+.login-btn:focus {
+    background: var(--white);
+    outline: none;
+}
+
+/* =================== LOGIN SCREEN =================== */
+/* background */
+.modal-background {
+    display: none;
+    background: rgba(0, 0, 0, .4);
+    position: fixed;
+    z-index: 1;
+    left: 0; top: 0;
+    width: 100%; height: 100%;
+}
+/* login screen */
+.modal-content {
+    position: relative;
+    background: whitesmoke;
+    width: 25vw;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.226);
+    margin: 80px auto;
+    border-radius: 8px;
+    animation-name: loginAnim;
+    animation-duration: .4s;
+}
+/* animation when opening login */
+@keyframes loginAnim {
+    from {
+        top: -300px;
+        opacity: 0;
+    }
+    to {
+        top: 0;
+        opacity: 1;
+    }
+}
+/* login header */
+.modal-header {
+    background: var(--dark);
+    color: whitesmoke;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+/* login title */
+.modal-title {
+    text-align: center;
+    font-size: 22pt;
+    padding: 10px 0;
+}
+/* login close button */
+.close {
+    float: right;
+    font-size: 18pt;
+    background: rgb(175, 71, 71);
+    padding: 0 7px;
+    border-radius: 4px;
+    margin: 6px 6px 0 0;
+    cursor: pointer;
+}
+.close:hover,
+.close:focus {
+    background: rgb(216, 88, 88);
+    outline: none;
+}
+.modal-body {
+    padding: 15px 80px;
+}
+.login-data {
+    margin-bottom: 20px;
+}
+.login-data label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+    color: var(--dark);
+}
+.login-data input {
+    width: 100%;
+    border: 1px solid rgb(175, 175, 175);
+    font-size: 12pt;
+    padding: 6px 0;
+    border-radius: 4px;
+    text-indent: 4px;
+}
+.login-data input:focus {
+    outline: none;
+}
+.login-links {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+/* create account link */
+.login-links a {
+    color: rgb(45, 144, 184);
+}
+.login-links a:hover,
+.login-links a:focus {
+    text-decoration: underline;
+    outline: none;
+}
+/* sign in button */
+.login-links button {
+    font-size: 12pt;
+    padding: 6px 10px;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    background: var(--dark);
+    color: whitesmoke;
+    cursor: pointer;
+}
+.login-links button:hover,
+.login-links button:focus {
+    outline: none;
+    background: var(--dark2);
+}
+/* =================== MAIN CONTENT =================== */
+main {
+    width: 75vw;
+    margin: 80px auto 0 auto;
+}
+
+/* labels */
+.labels {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    column-gap: 8px;
+}
+.labels-items li {
+    display: inline-block;
+}
+.labels-items button {
+    font-size: 13.5pt;
+    padding: 6px 10px;
+    background: var(--dark);
+    color: whitesmoke;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+    letter-spacing: 1px;
+    transition: background .3s ease-out;
+}
+.labels-items button:hover,
+.labels-items button:focus,
+.labels-items li.active > button {
+    background: var(--dark2);
+    outline: none;
+}
+
+/* dropdown */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-btn {
+    rotate: 90deg;
+    padding: 0 7px 8px 7px;
+    border: none;
+    border-radius: 50%;
+    background: var(--dark);
+    cursor: pointer;
+    color: whitesmoke;
+    font-size: 13.5pt;
+    font-weight: bold;
+    transition: background .3s ease-out;
+}
+.dropdown-btn:hover,
+.dropdown-btn:focus {
+    background: var(--dark2);
+    outline: none;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background: whitesmoke;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, .4);
+    border-radius: 4px;
+    z-index: 1;
+}
+.dropdown-content li {
+    display: block;
+    padding: 8px 20px 8px 6px;
+    cursor: pointer;
+    color: var(--dark2);
+}
+.dropdown-content li:hover {
+    background: var(--white);
+}
+/* first item */
+.drop-f {
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+/* last item */
+.drop-l {
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+/* cards */
+.news {
+    margin-top: 80px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    column-gap: 15px;
+    margin-bottom: 40px;
+}
+.card {
+    width: 50%;
+    cursor: pointer;
+}
+.card-w {
+    width: 100%;
+}
+.card-img {
+    border-radius: 8px;
+    width: 100%; height: 200px;
+    border: 1px solid var(--white);
+    margin-bottom: 4px;
+}
+.card-body {
+    padding: 0 4px;
+    margin-bottom: 5px;
+}
+.card-title {
+    font-size: 14pt;
+    color: var(--dark);
+}
+.card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 0 6px;
+    color: var(--dark);
+    font-style: italic;
+}
+.card-label {
+    font-size: 9.5pt;
+}
+.card-time {
+    font-size: 8.5pt;
 }
