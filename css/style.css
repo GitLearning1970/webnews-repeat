@@ -62,8 +62,9 @@ main {
 /* labels */
 .labels ul {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: baseline;
+    column-gap: 8px;
 }
 
 .labels li {
@@ -87,4 +88,27 @@ main {
 .labels li.active > button {
     background: var(--dark2);
     outline: none;
+}
+
+/* cards */
+.news {
+    margin-top: 80px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    column-gap: 15px;
+    margin-bottom: 40px;
+}
+
+.card {
+    width: 50%; height: 200px;
+    background: var(--dark);
+    border-radius: 8px;
+}
+
+.card-w {
+    width: 100%;
 }
