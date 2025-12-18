@@ -80,6 +80,7 @@ header {
 /* =================== LOGIN SCREEN =================== */
 /* background */
 .modal-background {
+    display: none;
     background: rgba(0, 0, 0, .4);
     position: fixed;
     z-index: 1;
@@ -94,6 +95,19 @@ header {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.226);
     margin: 80px auto;
     border-radius: 8px;
+    animation-name: loginAnim;
+    animation-duration: .4s;
+}
+/* animation when opening login */
+@keyframes loginAnim {
+    from {
+        top: -300px;
+        opacity: 0;
+    }
+    to {
+        top: 0;
+        opacity: 1;
+    }
 }
 /* login header */
 .modal-header {
