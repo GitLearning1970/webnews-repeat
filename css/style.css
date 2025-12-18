@@ -1,7 +1,7 @@
 :root {
     --dark: rgb(59, 59, 59);
     --dark2: rgb(46, 46, 46);
-    --white: rgb(204, 204, 204);
+    --white: rgb(221, 221, 221);
 }
 
 * {
@@ -37,6 +37,11 @@ header {
 }
 
 /* navigation bar on header */
+.navbar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
 .navbar-header li {
     display: inline-block;
     font-weight: bold;
@@ -50,6 +55,25 @@ header {
 .navbar-header a:focus,
 .navbar-header li.active > a {
     color: var(--white);
+    outline: none;
+}
+
+/* login button */
+.login-btn {
+    margin-left: 40px;
+    padding: 6px 10px;
+    font-size: 12pt;
+    background: whitesmoke;
+    color: var(--dark);
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background .3s ease-out;
+}
+.login-btn:hover,
+.login-btn:focus {
+    background: var(--white);
     outline: none;
 }
 
