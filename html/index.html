@@ -54,7 +54,7 @@
 
     <main role="main"> <!-- main content -->
         <div class="labels"> <!-- labels -->
-            <ul>
+            <ul class="labels-items"> <!-- labels items -->
                 <li><button type="button">Technology</button></li>
                 <li><button type="button">Games</button></li>
                 <li><button type="button">Entertainment</button></li>
@@ -62,16 +62,23 @@
                 <li><button type="button">Cience</button></li>
                 <li><button type="button">Home & Life</button></li>
                 <li><button type="button">Business</button></li>
-                <li><button type="button">Arts</button></li>
-                <li><button type="button">Motorsport</button></li>
-                <li><button type="button">Life Style</button></li>
-                <li><button type="button">Health</button></li>
-                <li><button type="button">Food</button></li>
-            </ul>
+            </ul> <!-- labels items /end -->
+
+            <div class="dropdown"> <!-- dropdown -->
+                <button type="button" class="dropdown-btn">...</button>
+                <ul class="dropdown-content"> <!-- dropdown content -->
+                    <li class="drop-f">Arts</li>
+                    <li>Motorsport</li>
+                    <li>Life Style</li>
+                    <li>Health</li>
+                    <li class="drop-l">Food</li>
+                </ul> <!-- dropdown content /end -->
+            </div> <!-- dropdown /end -->
         </div> <!-- labels /end -->
     </main> <!-- main content /end -->
 
     <script src="../js/login.js"></script>
+    <script src="../js/dropdown.js"></script>
     <script src="../js/index-cards.js" type="module"></script>
 </body>
 </html>
