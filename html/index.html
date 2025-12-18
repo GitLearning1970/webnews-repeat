@@ -22,8 +22,35 @@
                 <li><a href="./top-news">Top News</a></li> <!-- top news -->
                 <li><a href="./contact.html">Contact</a></li>
             </ul>
+
+            <button type="button" class="login-btn">Login</button>
         </nav> <!-- navigation bar header /end -->
     </header> <!-- header /end -->
+
+    <div class="modal-background"> <!-- login background -->
+        <div class="modal-content"> <!-- login screen -->
+            <div class="modal-header"> <!-- login header -->
+                <span class="close">&times;</span>
+                <h2 class="modal-title">LOGIN</h2>
+            </div> <!-- login heaer /end -->
+            <div class="modal-body"> <!-- modal body -->
+                <form method="post"> <!-- login form -->
+                    <div class="login-data"> <!-- login e-mail -->
+                        <label for="loginEmail">E-mail:</label>
+                        <input type="email" name="email" id="loginEmail">
+                    </div> <!-- login e-mail /end -->
+                    <div class="login-data"> <!-- login password -->
+                        <label for="loginPass">Password:</label>
+                        <input type="password" name="password" id="loginPass">
+                    </div> <!-- login password /end -->
+                </form> <!-- login form /end -->
+                <div class="login-links"> <!-- links -->
+                    <a href="./register.html">Create account</a>
+                    <button type="button">Sign in</button>
+                </div> <!-- links /end -->
+            </div> <!-- modal body /end -->  
+        </div> <!-- login screen /end -->
+    </div> <!-- login background /end -->
 
     <main role="main"> <!-- main content -->
         <div class="labels"> <!-- labels -->
@@ -50,6 +77,7 @@
         </div> <!-- labels /end -->
     </main> <!-- main content /end -->
 
+    <script src="../js/login.js"></script>
     <script src="../js/dropdown.js"></script>
     <script src="../js/index-cards.js" type="module"></script>
 </body>

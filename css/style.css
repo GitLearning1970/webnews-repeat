@@ -1,7 +1,7 @@
 :root {
     --dark: rgb(59, 59, 59);
     --dark2: rgb(46, 46, 46);
-    --white: rgb(204, 204, 204);
+    --white: rgb(221, 221, 221);
 }
 
 * {
@@ -37,6 +37,11 @@ header {
 }
 
 /* navigation bar on header */
+.navbar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
 .navbar-header li {
     display: inline-block;
     font-weight: bold;
@@ -53,6 +58,139 @@ header {
     outline: none;
 }
 
+/* login button */
+.login-btn {
+    margin-left: 40px;
+    padding: 6px 10px;
+    font-size: 12pt;
+    background: whitesmoke;
+    color: var(--dark);
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background .3s ease-out;
+}
+.login-btn:hover,
+.login-btn:focus {
+    background: var(--white);
+    outline: none;
+}
+
+/* =================== LOGIN SCREEN =================== */
+/* background */
+.modal-background {
+    display: none;
+    background: rgba(0, 0, 0, .4);
+    position: fixed;
+    z-index: 1;
+    left: 0; top: 0;
+    width: 100%; height: 100%;
+}
+/* login screen */
+.modal-content {
+    position: relative;
+    background: whitesmoke;
+    width: 25vw;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.226);
+    margin: 80px auto;
+    border-radius: 8px;
+    animation-name: loginAnim;
+    animation-duration: .4s;
+}
+/* animation when opening login */
+@keyframes loginAnim {
+    from {
+        top: -300px;
+        opacity: 0;
+    }
+    to {
+        top: 0;
+        opacity: 1;
+    }
+}
+/* login header */
+.modal-header {
+    background: var(--dark);
+    color: whitesmoke;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+/* login title */
+.modal-title {
+    text-align: center;
+    font-size: 22pt;
+    padding: 10px 0;
+}
+/* login close button */
+.close {
+    float: right;
+    font-size: 18pt;
+    background: rgb(175, 71, 71);
+    padding: 0 7px;
+    border-radius: 4px;
+    margin: 6px 6px 0 0;
+    cursor: pointer;
+}
+.close:hover,
+.close:focus {
+    background: rgb(216, 88, 88);
+    outline: none;
+}
+.modal-body {
+    padding: 15px 80px;
+}
+.login-data {
+    margin-bottom: 20px;
+}
+.login-data label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+    color: var(--dark);
+}
+.login-data input {
+    width: 100%;
+    border: 1px solid rgb(175, 175, 175);
+    font-size: 12pt;
+    padding: 6px 0;
+    border-radius: 4px;
+    text-indent: 4px;
+}
+.login-data input:focus {
+    outline: none;
+}
+.login-links {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+/* create account link */
+.login-links a {
+    color: rgb(45, 144, 184);
+}
+.login-links a:hover,
+.login-links a:focus {
+    text-decoration: underline;
+    outline: none;
+}
+/* sign in button */
+.login-links button {
+    font-size: 12pt;
+    padding: 6px 10px;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    background: var(--dark);
+    color: whitesmoke;
+    cursor: pointer;
+}
+.login-links button:hover,
+.login-links button:focus {
+    outline: none;
+    background: var(--dark2);
+}
 /* =================== MAIN CONTENT =================== */
 main {
     width: 75vw;
