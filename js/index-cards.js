@@ -12,7 +12,7 @@ function generateNews() {
     for (let i = 0; i < rowsAmount; i++) {
         // rows
         row[i] = document.createElement('div')
-        row[i].classList.add('row')
+        row[i].classList.add('row', 'wb-d-flex')
         
         // amount of cards
         const cardsAmount = rand(3, 5)

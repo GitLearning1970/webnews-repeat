@@ -26,7 +26,7 @@ function generateCards(amount) {
         title[j].innerText = `Title ${cardNum}`
         // footer
         footer[j] = document.createElement('div')
-        footer[j].classList.add('card-footer')
+        footer[j].classList.add('card-footer', 'wb-d-flex')
         // label
         label[j] = document.createElement('span')
         label[j].classList.add('card-label')

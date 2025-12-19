@@ -1,0 +1,42 @@
+/* =================== HEADER =================== */
+header {
+    background: var(--dark);
+    padding: 15px 10vw;
+}
+
+/* site logo */
+.logo a {
+    color: whitesmoke;
+}
+.logo a:focus {
+    outline: none;
+}
+
+/* navigation bar on header */
+.navbar-header li {
+    display: inline-block;
+    font-weight: bold;
+    margin-left: 20px;
+    font-size: 12pt;
+}
+.navbar-header a {
+    color: whitesmoke;
+}
+.navbar-header a:hover,
+.navbar-header a:focus,
+.navbar-header li.active > a {
+    color: var(--white);
+    outline: none;
+}
+
+/* login button */
+.login-btn {
+    margin-left: 40px;
+    background: whitesmoke;
+    color: var(--dark);
+}
+.login-btn:hover,
+.login-btn:focus {
+    background: var(--white);
+    outline: none;
+}
