@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>WebNews | News</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="../css/cards.css">
+    <link rel="stylesheet" href="../css/news-page.css">
+</head>
+<body>
+    <header class="header wb-d-flex"> <!-- header -->
+        <div class="logo"> <!-- logo -->
+            <h1><a href="./index.html">WebNews</a></h1>
+        </div> <!-- logo /end -->
+
+        <nav class="navbar-header wb-d-flex"> <!-- navigation bar header -->
+            <ul>
+                <li class="active"><a href="./index.html">Home</a></li>
+                <li><a href="./most-impotant.html">Most Important</a></li> <!-- main news -->
+                <li><a href="./relevant.html">Relevant</a></li> <!-- major news -->
+                <li><a href="./top-news">Top News</a></li> <!-- top news -->
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+
+            <button type="button" class="login-btn wb-button">Login</button>
+        </nav> <!-- navigation bar header /end -->
+    </header> <!-- header /end -->
+
+    <div class="modal-background"> <!-- login background -->
+        <div class="modal-content"> <!-- login screen -->
+            <div class="modal-header"> <!-- login header -->
+                <span class="close">&times;</span>
+                <h2 class="modal-title">LOGIN</h2>
+            </div> <!-- login heaer /end -->
+            <div class="modal-body"> <!-- modal body -->
+                <form method="post"> <!-- login form -->
+                    <div class="login-data"> <!-- login e-mail -->
+                        <label for="loginEmail">E-mail:</label>
+                        <input type="email" name="email" id="loginEmail">
+                    </div> <!-- login e-mail /end -->
+                    <div class="login-data"> <!-- login password -->
+                        <label for="loginPass">Password:</label>
+                        <input type="password" name="password" id="loginPass">
+                    </div> <!-- login password /end -->
+                </form> <!-- login form /end -->
+                <div class="login-links wb-d-flex"> <!-- links -->
+                    <a href="./register.html">Create account</a>
+                    <button type="button" class="wb-button">Sign in</button>
+                </div> <!-- links /end -->
+            </div> <!-- modal body /end -->  
+        </div> <!-- login screen /end -->
+    </div> <!-- login background /end -->
+
+    <main role="main" class="wb-d-flex">
+        <article class="news-content"> <!-- content news -->
+            <header class="news-header"> <!-- news header -->
+                <h1 class="news-title">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h1>
+                <h2 class="news-subtitle">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed, harum odio. Aspernatur praesentium deserunt laboriosam?</h2>
+                <div class="news-signature"> <!-- signature -->
+                    <p class="sig-name">by &lt;author's name&gt;</p>
+                    <p class="sig-time">Time posted: MM / DD / YYYY</p>
+                </div> <!-- signature /end -->
+            </header> <!-- news header /end -->
+
+            <section class="news-body">
+                <figure class="news-fig">
+                    <img src="https://picsum.photos/800" alt="News image">
+                    <figcaption>
+                        <p>image description</p>
+                    </figcaption>
+                </figure>
+
+                <div class="news-text">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis placeat reprehenderit blanditiis quos ad nisi, tempora iure voluptatum sequi id, temporibus molestiae corrupti quidem quia error optio saepe beatae quod. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam cumque voluptas accusamus vitae numquam asperiores unde illum deleniti deserunt nihil velit tempora est a ad cupiditate, quaerat temporibus excepturi quod?</p>
+
+                    <h2>Subtitle</h2>
+
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam, unde cumque veniam aperiam officia doloribus dignissimos excepturi possimus ab praesentium recusandae reprehenderit architecto, quo quae aliquam quos rem, repellendus facere. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi atque voluptatem praesentium quibusdam dolorem natus? Soluta enim sed in, distinctio accusamus alias, sunt quis exercitationem, aliquam reiciendis maxime eos ipsum?</p>
+
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio saepe, architecto harum tempora nihil reiciendis repudiandae hic officiis ab, modi ratione quis labore natus. Distinctio, assumenda. Saepe iure officia eius? Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia soluta harum eos accusantium, alias esse vero explicabo qui numquam veritatis illum ipsa corporis libero autem laboriosam incidunt ipsam quisquam quidem. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus quam voluptas aperiam cupiditate, ipsam ut laudantium placeat expedita harum omnis ea tempora, itaque quisquam corrupti eaque adipisci facere sunt sit. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam reprehenderit magni dolores. Id iste rerum minus? Accusantium porro totam error placeat voluptas, nam nisi maiores dicta nulla. Accusamus, doloribus tenetur!</p>
+
+                    <h2>Subtitle</h2>
+
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis nostrum, facere, repellat quasi provident eveniet autem unde sed numquam omnis consectetur atque, optio ex delectus saepe pariatur enim labore expedita. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque alias nostrum recusandae in distinctio neque dolores rerum praesentium eveniet, explicabo esse quaerat accusamus, nam fuga exercitationem reprehenderit! Exercitationem, ipsum sequi! Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem possimus ratione facilis voluptatum excepturi ab, id tenetur totam mollitia praesentium sunt sed maiores at temporibus ipsum quam nobis, iure officia.</p>
+                </div>
+            </section>
+        </article> <!-- content news /end -->
+        <aside class="aside-content"> <!-- aside content -->
+            <h3 class="aside-title">More News</h3>
+            <div class="aside-news">
+                <div class="card">
+                    <img src="https://picsum.photos/200?random=1" class="card-img">
+                    <div class="card-body">
+                        <h4 class="card-title">Title 1</h4>
+                    </div>
+                    <div class="card-footer wb-d-flex">
+                        <span class="card-label">label</span>
+                        <span class="card-time">DD / MM / YYYY</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://picsum.photos/200?random=2" class="card-img">
+                    <div class="card-body">
+                        <h4 class="card-title">Title 2</h4>
+                    </div>
+                    <div class="card-footer wb-d-flex">
+                        <span class="card-label">label</span>
+                        <span class="card-time">DD / MM / YYYY</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://picsum.photos/200?random=3" class="card-img">
+                    <div class="card-body">
+                        <h4 class="card-title">Title 3</h4>
+                    </div>
+                    <div class="card-footer wb-d-flex">
+                        <span class="card-label">label</span>
+                        <span class="card-time">DD / MM / YYYY</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://picsum.photos/200?random=4" class="card-img">
+                    <div class="card-body">
+                        <h4 class="card-title">Title 5</h4>
+                    </div>
+                    <div class="card-footer wb-d-flex">
+                        <span class="card-label">label</span>
+                        <span class="card-time">DD / MM / YYYY</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://picsum.photos/200?random=5" class="card-img">
+                    <div class="card-body">
+                        <h4 class="card-title">Title 6</h4>
+                    </div>
+                    <div class="card-footer wb-d-flex">
+                        <span class="card-label">label</span>
+                        <span class="card-time">DD / MM / YYYY</span>
+                    </div>
+                </div>
+            </div>
+        </aside> <!-- aside content /end -->
+    </main>
+
+    <script src="../js/login.js"></script>
+</body>
+</html>
