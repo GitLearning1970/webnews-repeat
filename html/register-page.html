@@ -8,7 +8,7 @@
 
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/header.css">
-    <link rel="stylesheet" href="../css/register.css">
+    <link rel="stylesheet" href="../css/register-page.css">
 </head>
 <body style="height: 100%;">
     <header class="header d-flex"> <!-- header -->
@@ -28,28 +28,43 @@
             </figure> <!-- Image and caption /end -->
         </section> <!-- Register page Image /end -->
         <section class="painel-form">
-            <form method="post" class="register-form">
+            <!-- <form method="post" class="register-form">
                 <div class="usr-data">
                     <label for="usrName">Username:</label>
                     <input type="text" name="name" id="usrName" autofocus placeholder="A real o name or a nickname">
                 </div>
                 <div class="usr-data">
-                    <label for="usrEmail">E-mail:</label>
-                    <input type="email" name="email" id="usrEmail" placeholder="example@email.com">
+                    <label for="regEmail">E-mail:</label>
+                    <input type="email" name="email" id="regEmail" placeholder="example@email.com">
                 </div>
                 <div class="usr-pass d-flex">
                     <div class="usr-data">
-                        <label for="usrPass">Password:</label>
-                        <input type="password" name="password" id="usrPass" minlength="8" placeholder="Max.: 8 characters">
+                        <label for="regPass">Password:</label>
+                        <input type="password" name="password" id="regPass" minlength="8" placeholder="Max.: 8 characters">
                     </div>
                     <div class="usr-data">
-                        <label for="usrConfPass">Confirm password:</label>
-                        <input type="password" name="confPassword" id="usrConfPass" placeholder="Repeat password">
+                        <label for="confPass">Confirm password:</label>
+                        <input type="password" name="confPassword" id="confPass" placeholder="Repeat password">
                     </div>
                 </div>
-                <div class="register-links d-flex">
-                    <p class="reg-link">I have an account</p>
-                    <button type="button" class="button">Sign up</button>
+                <div class="form-links d-flex">
+                    <p class="link">I have an account</p>
+                    <button type="button" class="button form-btn">Sign up</button>
+                </div>
+            </form> -->
+
+            <form method="post" class="login-form">
+                <div class="usr-data">
+                    <label for="logEmail">E-mail:</label>
+                    <input type="email" name="email" id="logEmail">
+                </div>
+                <div class="usr-data">
+                    <label for="logPass">Password:</label>
+                    <input type="password" name="password" id="logPass">
+                </div>
+                <div class="form-links d-flex">
+                    <p class="link">Create account</p>
+                    <button type="button" class="button form-btn">Sign in</button>
                 </div>
             </form>
         </section>

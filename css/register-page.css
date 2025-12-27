@@ -31,17 +31,8 @@
 }
 
 /* ------------- forms ------------- */
-.painel-form {
-    background: var(--white);
-    position: relative;
-    width: 40%; height: 100%;
-}
-
-form {
-    width: 22vw;
-}
 /* form screen */
-.register-form {
+form {
     border-radius: 8px;
     background: whitesmoke;
     position: relative;
@@ -49,6 +40,14 @@ form {
     transform: translate(-50%, -50%);
     padding: 20px 10px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, .4);
+}
+/* ----- register screen ----- */
+.register-form {
+    width: 22vw;
+}
+/* ----- login screen ----- */
+.login-form {
+    width: 15vw;
 }
 /* labels and inputs */
 .usr-data {
@@ -76,27 +75,33 @@ form {
 .usr-data input:focus {
     outline: none;
 }
+/* sign up and sign in button */
+.form-btn {
+    background: var(--dark);
+    color: whitesmoke;
+}
+.form-btn:hover {
+    background: var(--dark2);
+}
+
+.painel-form {
+    background: var(--white);
+    position: relative;
+    width: 40%; height: 100%;
+}
 /* password */
 .usr-pass {
     margin-bottom: 25px;
 }
 /* link */
-.register-links {
+.form-links {
     width: 85%;
-    margin: 0 auto;
+    margin: 20px auto 0 auto;
 }
-.register-links p {
+.link {
     color: rgb(43, 169, 219);
     cursor: pointer;
 }
-.register-links p:hover {
+.link:hover {
     text-decoration: underline;
-}
-/* sign up button */
-.register-links button {
-    background: var(--dark);
-    color: whitesmoke;
-}
-.register-links button:hover {
-    background: var(--dark2);
 }
