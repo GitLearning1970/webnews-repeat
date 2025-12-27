@@ -19,13 +19,13 @@ a {
     text-decoration: none;
 }
 /* flexible display */
-.wb-d-flex {
+.d-flex {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
 }
 /* button */
-.wb-button {
+.button {
     padding: 6px 10px;
     font-size: 12pt;
     border: none;

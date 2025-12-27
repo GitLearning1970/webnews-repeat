@@ -12,6 +12,7 @@ function generateCards(amount) {
         // cards
         card[j] = document.createElement('article')
         card[j].classList.add('card')
+        card[j].addEventListener('click', () => location.href = './news-page.html')
         // images
         cardNum++
         img[j] = document.createElement('img')
@@ -26,7 +27,7 @@ function generateCards(amount) {
         title[j].innerText = `Title ${cardNum}`
         // footer
         footer[j] = document.createElement('div')
-        footer[j].classList.add('card-footer', 'wb-d-flex')
+        footer[j].classList.add('card-footer', 'd-flex')
         // label
         label[j] = document.createElement('span')
         label[j].classList.add('card-label')

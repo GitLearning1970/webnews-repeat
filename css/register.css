@@ -1,0 +1,102 @@
+.container-register {
+    height: 100%;
+    align-items: flex-end;
+}
+
+/* ------------- image ------------- */
+.painel-img {
+    background: var(--dark2);
+    width: 60%; height: 100%;
+    text-align: center;
+}
+
+.painel-img img {
+    width: 35vw;
+}
+
+.painel-img figcaption {
+    width: 40vw;
+    margin: 0 auto;
+    color: var(--white);
+    line-height: 22pt;
+}
+
+.painel-img figcaption a {
+    display: inline-block;
+    margin-top: 20px;
+    color: rgb(43, 169, 219);
+}
+.painel-img figcaption a:hover {
+    text-decoration: underline;
+}
+
+/* ------------- forms ------------- */
+.painel-form {
+    background: var(--white);
+    position: relative;
+    width: 40%; height: 100%;
+}
+
+form {
+    width: 22vw;
+}
+/* form screen */
+.register-form {
+    border-radius: 8px;
+    background: whitesmoke;
+    position: relative;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, .4);
+}
+/* labels and inputs */
+.usr-data {
+    margin-bottom: 12px;
+}
+.usr-data label {
+    display: block;
+    font-weight: bold;
+    font-size: 13pt;
+    margin-bottom: 4px;
+}
+.usr-data input {
+    display: block;
+    width: 100%;
+    font-size: 12pt;
+    padding: 6px 0;
+    text-indent: 4px;
+    border: 1px solid rgb(126, 126, 126);
+    border-radius: 4px;
+}
+.usr-data input::placeholder {
+    font-style: italic;
+    color: rgb(165, 165, 165);
+}
+.usr-data input:focus {
+    outline: none;
+}
+/* password */
+.usr-pass {
+    margin-bottom: 25px;
+}
+/* link */
+.register-links {
+    width: 85%;
+    margin: 0 auto;
+}
+.register-links p {
+    color: rgb(43, 169, 219);
+    cursor: pointer;
+}
+.register-links p:hover {
+    text-decoration: underline;
+}
+/* sign up button */
+.register-links button {
+    background: var(--dark);
+    color: whitesmoke;
+}
+.register-links button:hover {
+    background: var(--dark2);
+}

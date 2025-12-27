@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" style="height: 100%;">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>WebNews | Create account</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/register.css">
+</head>
+<body style="height: 100%;">
+    <header class="header d-flex"> <!-- header -->
+        <div class="logo"> <!-- logo -->
+            <h1><a href="./index.html">WebNews</a></h1>
+        </div> <!-- logo /end -->
+    </header> <!-- header /end -->
+
+    <main role="main" class="container-register d-flex">
+        <section class="painel-img"> <!-- Register page Image -->
+            <figure> <!-- Image and caption -->
+                <img src="../res/register-img.svg" alt="Image News">
+                <figcaption>
+                    <h3>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat inventore ut dolorem quae corrupti excepturi! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo velit libero aliquid. Ab similique ratione exercitationem recusandae, eligendi iste, pariatur, natus asperiores consequatur error doloribus odit vel molestias fuga ad.</h3>
+                    <a href="https://storyset.com/information">Information illustrations by Storyset</a>
+                </figcaption>
+            </figure> <!-- Image and caption /end -->
+        </section> <!-- Register page Image /end -->
+        <section class="painel-form">
+            <form method="post" class="register-form">
+                <div class="usr-data">
+                    <label for="usrName">Username:</label>
+                    <input type="text" name="name" id="usrName" autofocus placeholder="A real o name or a nickname">
+                </div>
+                <div class="usr-data">
+                    <label for="usrEmail">E-mail:</label>
+                    <input type="email" name="email" id="usrEmail" placeholder="example@email.com">
+                </div>
+                <div class="usr-pass d-flex">
+                    <div class="usr-data">
+                        <label for="usrPass">Password:</label>
+                        <input type="password" name="password" id="usrPass" minlength="8" placeholder="Max.: 8 characters">
+                    </div>
+                    <div class="usr-data">
+                        <label for="usrConfPass">Confirm password:</label>
+                        <input type="password" name="confPassword" id="usrConfPass" placeholder="Repeat password">
+                    </div>
+                </div>
+                <div class="register-links d-flex">
+                    <p class="reg-link">I have an account</p>
+                    <button type="button" class="button">Sign up</button>
+                </div>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
