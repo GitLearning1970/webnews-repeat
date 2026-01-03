@@ -1,12 +1,17 @@
-const form = document.querySelectorAll('form')
-const formLink = document.querySelectorAll('.link')
-// close register screen and open login screen
-formLink[0].addEventListener('click', () => {
-    form[0].style.display = 'none'
-    form[1].style.display = 'block'
-})
-// opposite logic
-formLink[1].addEventListener('click', () => {
-    form[0].style.display = 'block'
-    form[1].style.display = 'none'
-})
+const link = document.querySelectorAll('.link')
+// form links
+link.forEach(l => l.addEventListener('click', () => changeDisplay()))
+// function to change the visibility of forms
+function changeDisplay() {
+    const form = document.querySelectorAll('form')
+    let register = form[0].style
+    let login = form[1].style
+    
+    if (register.display == 'block') {
+        register.display = 'none'
+        login.display = 'block'
+    } else {
+        login.display = 'none'
+        register.display = 'block'
+    }
+}

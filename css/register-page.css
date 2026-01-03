@@ -44,12 +44,10 @@ form {
 /* ----- register screen ----- */
 .register-form {
     width: 22vw;
-    display: block;
 }
 /* ----- login screen ----- */
 .login-form {
     width: 15vw;
-    display: none;
 }
 /* labels and inputs */
 .usr-data {
