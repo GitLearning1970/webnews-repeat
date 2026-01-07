@@ -53,6 +53,10 @@ main {
     border-radius: 8px;
 }
 
+.news-fig figcaption {
+    color: grey;
+}
+
 /* text */
 .news-text {
     width: 90%;
@@ -66,7 +70,11 @@ main {
 
 .news-text h2 {
     font-size: 18pt;
-    margin: 15px 0 4px 0;
+    margin-bottom: 4px;
+}
+
+.news-article {
+    margin-top: 20px;
 }
 
 /* --------------- ASIDE --------------- */
