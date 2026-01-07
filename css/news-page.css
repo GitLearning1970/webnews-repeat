@@ -77,6 +77,64 @@ main {
     margin-top: 20px;
 }
 
+/* --------------- COMMENT SECTION --------------- */
+/* title */
+.comment-title {
+    justify-content: start;
+    align-items: center;
+    margin-top: 35px;
+    color: var(--dark2);
+}
+/* comment section icon */
+.fa-comment {
+    margin-right: 8px;
+    font-size: 18pt;
+}
+.comment-title-text {
+    font-size: 18.5pt;
+}
+
+.comment {
+    justify-content: start;
+    align-items: flex-start;
+    margin-top: 15px;
+}
+/* comment section - user icon */
+.fa-user {
+    font-size: 16pt;
+    margin-right: 8px;
+    color: whitesmoke;
+    background: var(--dark);
+    padding: 8px 9px;
+    border-radius: 50%;
+}
+/* comment text */
+.comment-usr textarea {
+    display: block;
+    margin-bottom: 10px;
+    border: 1px solid darkgrey;
+    border-radius: 4px;
+    padding: 5px 5px 0 5px;
+    font-size: 13pt;
+    font-family: arial, sans-serif;
+    height: 80px; width: 500px;
+}
+.comment-usr textarea:focus {
+    outline: none;
+}
+.comment-usr textarea::placeholder {
+    font-style: italic;
+    color: rgb(172, 172, 172);
+}
+/* comment buttons */
+.comment-usr button {
+    background: var(--dark);
+    color: whitesmoke;
+}
+.comment-usr button:hover {
+    background: var(--dark2);
+}
+
 /* --------------- ASIDE --------------- */
 .aside-content {
     width: 30%;
