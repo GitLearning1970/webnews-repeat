@@ -78,25 +78,17 @@ header {
 }
 
 /* =================== LOGIN SCREEN =================== */
-/* background */
-.modal-background {
-    display: none;
-    background: rgba(0, 0, 0, .4);
-    position: fixed;
-    z-index: 1;
-    left: 0; top: 0;
-    width: 100%; height: 100%;
-}
-/* login screen */
-.modal-content {
-    position: relative;
-    background: whitesmoke;
-    width: 25vw;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.226);
-    margin: 80px auto;
-    border-radius: 8px;
+/* modal */
+.modal-login {
+    margin: 80px auto 0 auto;
     animation-name: loginAnim;
     animation-duration: .4s;
+    width: 20vw;
+    border: none;
+    border-radius: 8px;
+}
+.modal-login::backdrop {
+    background: rgba(0, 0, 0, .4);
 }
 /* animation when opening login */
 @keyframes loginAnim {
@@ -138,7 +130,7 @@ header {
     outline: none;
 }
 .modal-body {
-    padding: 15px 80px;
+    padding: 15px 25px;
 }
 .login-data {
     margin-bottom: 20px;
