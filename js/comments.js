@@ -1,16 +1,16 @@
 const commentSec = document.querySelector('.comment')
 const commentBtn = document.querySelector('.comment-btn')
 const commentTitle = document.querySelector('.comment-title-text')
+// create comments counter
 const counter = document.createElement('span')
-counter.innerText = ` (${0})`
-
-commentTitle.appendChild(counter)
-
 // create container for comments
 const container = document.createElement('div')
 container.classList.add('comment-container')
 // put container on section
 commentSec.appendChild(container)
+commentTitle.appendChild(counter)
+const getCounter = () => ` (${container.childNodes.length})`
+counter.innerText = getCounter()
 
 let user = 0
 commentBtn.addEventListener('click', () => {
@@ -49,7 +49,7 @@ commentBtn.addEventListener('click', () => {
         container.appendChild(comment)
     }
     // update comments counter
-    counter.innerText = ` (${container.childNodes.length})`
+    counter.innerText = getCounter()
     
     field.value = ''
 })
