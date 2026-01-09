@@ -1,0 +1,88 @@
+/* --------------- COMMENT SECTION --------------- */
+/* title */
+.comment-title {
+    justify-content: start;
+    align-items: center;
+    margin: 45px 0 0 6px;
+    color: var(--dark2);
+}
+/* comment section icon */
+.fa-comment {
+    margin-right: 8px;
+    font-size: 18pt;
+}
+.comment-title-text {
+    font-size: 18.5pt;
+}
+
+.comment-usr {
+    justify-content: start;
+    align-items: flex-start;
+    margin-top: 30px;
+}
+/* comment section - user icon */
+.comment .fa-user {
+    font-size: 16pt;
+    margin-right: 8px;
+    color: whitesmoke;
+    background: var(--dark);
+    padding: 8px 9px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+/* comment text */
+.comment-field textarea {
+    display: block;
+    margin-bottom: 10px;
+    border: 1px solid darkgrey;
+    border-radius: 4px;
+    padding: 5px 5px 0 5px;
+    font-size: 13pt;
+    font-family: arial, sans-serif;
+    height: 80px; width: 500px;
+}
+.comment-field textarea:focus {
+    outline: none;
+}
+.comment-field textarea::placeholder {
+    font-style: italic;
+    color: rgb(172, 172, 172);
+}
+/* comment buttons */
+.comment-btn {
+    background: var(--dark);
+    color: whitesmoke;
+}
+.comment-btn:hover {
+    background: var(--dark2);
+}
+/* container */
+.comment-container {
+    margin-top: 50px;
+}
+
+.comment-set {
+    justify-content: start;
+    align-items: flex-start;
+    margin-bottom: 35px;
+}
+/* comment data */
+.comment-text-data {
+    justify-content: start;
+}
+/* username */
+.comment-text-data p {
+    margin-right: 10px;
+    font-weight: bold;
+}
+/* date */
+.comment-text-data span {
+    font-size: 9pt;
+    color: grey;
+    font-style: italic;
+}
+/* comment text */
+.comment-text-p {
+    margin-top: 8px;
+    line-height: 22px;
+}

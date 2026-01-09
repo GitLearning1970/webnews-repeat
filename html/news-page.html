@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/header.css">
     <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="../css/comments.css">
     <link rel="stylesheet" href="../css/cards.css">
     <link rel="stylesheet" href="../css/news-page.css">
 
@@ -97,17 +98,17 @@
                     </article>
                 </div> <!-- text /end -->
 
-                <div class="comment-section"> <!-- comment section -->
+                <div class="comment"> <!-- comment section -->
                     <div class="comment-title d-flex"> <!-- title -->
                         <i class="fa-solid fa-comment"></i>
-                        <h4 class="comment-title-text">Comments (0)</h4>
+                        <h4 class="comment-title-text">Comments</h4>
                     </div> <!-- title /end -->
 
-                    <div class="comment d-flex"> <!-- comment field -->
+                    <div class="comment-usr d-flex"> <!-- comment field -->
                         <i class="fa-solid fa-user"></i>
-                        <div class="comment-usr"> <!-- comment text -->
-                            <textarea id="commentText" placeholder="Leave a comment..."></textarea>
-                            <button type="button" class="button">Comment</button>
+                        <div class="comment-field"> <!-- comment text -->
+                            <textarea id="commentField" placeholder="Leave a comment..."></textarea>
+                            <button type="button" class="button comment-btn">Comment</button>
                         </div> <!-- comment text /end -->
                     </div> <!-- comment field /end -->
                 </div> <!-- comment section /end -->
@@ -120,5 +121,6 @@
 
     <script src="../js/login.js"></script>
     <script src="../js/newspage-cards.js" type="module"></script>
+    <script src="../js/comments.js"></script>
 </body>
 </html>
