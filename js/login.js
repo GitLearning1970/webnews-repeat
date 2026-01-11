@@ -1,5 +1,5 @@
 const loginBtn = document.querySelector('.login-btn')
-const loginClose = document.querySelector('.close')
+const loginClose = document.querySelector('.modal-close')
 const loginScreen = document.querySelector('.modal-background').style
 // open login screen
 loginBtn.addEventListener('click', () => loginScreen.display = 'block')

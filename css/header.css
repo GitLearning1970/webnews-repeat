@@ -40,3 +40,13 @@
     background: var(--white);
     outline: none;
 }
+/* sidenav menu button */
+.user-photo {
+    margin-left: 40px;
+    color: var(--dark);
+    background: whitesmoke;
+    padding: 8px 10px;
+    border-radius: 50%;
+    font-size: 15pt;
+    cursor: pointer;
+}

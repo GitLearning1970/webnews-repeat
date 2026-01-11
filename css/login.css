@@ -44,7 +44,7 @@
     padding: 10px 0;
 }
 /* login close button */
-.close {
+.modal-close {
     float: right;
     font-size: 18pt;
     background: rgb(175, 71, 71);
@@ -53,8 +53,8 @@
     margin: 6px 6px 0 0;
     cursor: pointer;
 }
-.close:hover,
-.close:focus {
+.modal-close:hover,
+.modal-close:focus {
     background: rgb(216, 88, 88);
     outline: none;
 }
