@@ -1,0 +1,67 @@
+/* menu */
+.sidenav {
+    position: absolute;
+    height: 100%;
+    width: 250px;
+    top: 0; right: 0;
+    position: fixed;
+    z-index: 1;
+    overflow-x: hidden;
+    background: var(--dark);
+    transition: .5s;
+}
+/* close button */
+.sidenav-close {
+    float: right;
+    font-size: 20pt;
+    margin: 8px 8px 0 0;
+    background: whitesmoke;
+    color: var(--dark);
+    padding: 0 8px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: .4s;
+}
+.sidenav-close:hover {
+    background: var(--white);
+}
+/* menu options */
+.sidenav-menu {
+    margin-top: 60px;
+    font-size: 16pt;
+}
+.sidenav-menu ul {
+    margin-bottom: 50px;
+}
+.sidenav-menu li {
+    font-weight: bold;
+    margin: 0 0 15px 40px;
+    list-style: none;
+}
+.sidenav-menu a {
+    color: whitesmoke;
+    transition: .4s;
+}
+.sidenav-menu a:hover {
+    color: var(--white);
+}
+/* log out button */
+.logout {
+    font-size: 16pt;
+    background: none;
+    border: none;
+    color: whitesmoke;
+    cursor: pointer;
+    font-weight: bold;
+    margin-left: 20px;
+    transition: color .4s;
+}
+.logout:hover {
+    color: var(--white);
+}
+.logout span {
+    transition: margin-left .2s;
+}
+.logout:hover span {
+    margin-left: 5px;
+}
